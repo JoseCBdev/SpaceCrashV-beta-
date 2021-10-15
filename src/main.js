@@ -2,17 +2,17 @@ import Firstscene from './scenes/Firstscene.js'
 
 const config = {
 
-    title: 'Titulo del juego',
+    title: 'SpaceCrash - SpaceRunners',
     url: 'https://www.RackGames/Html5Games/',
     version: '0.0.1',
 
     pixelArt: true,
 
     type: Phaser.AUTO,
-    width: 288,
-    height: 512,
+    width: 360,
+    height: 640,
     parent: 'container',
-    backgroundColor: '#34495e',
+    backgroundColor: '#1b2632',
 
     banner: {
         hidePhaser: true,
@@ -24,6 +24,14 @@ const config = {
             'red',
             'trasparent'
         ]
+    },
+
+    physics: {
+        default: 'arcade',
+        arcade: {
+            gravity: { y: 0 },
+            debug: false
+        } 
     },
 
     scene: [Firstscene]
